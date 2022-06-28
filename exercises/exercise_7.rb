@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Please enter the store name you're looking for..."
+@asked_store = gets.chomp
+
+@asked_store = Store.new
+puts @asked_store.valid?
+puts @asked_store.errors.details
+
